@@ -3,8 +3,8 @@ const alchemyKey = process.env.REACT_APP_ALCHEMY_KEY;
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(alchemyKey);
 
-const contractABI = require("../contract-abi.json");
-const contractAddress = "0x28cBFd8B8de17Aa41DBD19eC0bE567C568E1168C";
+const contractABI = require("../mumbai-contract-abi.json");
+const contractAddress = "0x1b1beBcbD279bB7782a13b9F33558022F4Aac5b7";
 
 export const molochDAOContract = new web3.eth.Contract(
   contractABI,
